@@ -1,13 +1,17 @@
-package com.rajputkapilesh.tmdbclient.data
+package com.rajputkapilesh.tmdbclient.data.model.movie
 
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "popular_movies")
 data class Movie(
-    @SerializedName("adult")
-    val adult: Boolean?,
+    @PrimaryKey
     @SerializedName("id")
     val id: Int,
+    @SerializedName("adult")
+    val adult: Boolean?,
     @SerializedName("original_language")
     val originalLanguage: String?,
     @SerializedName("original_title")

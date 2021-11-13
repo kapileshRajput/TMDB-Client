@@ -1,8 +1,8 @@
-package com.rajputkapilesh.tmdbclient.api
+package com.rajputkapilesh.tmdbclient.data.api
 
-import com.rajputkapilesh.tmdbclient.data.ArtistList
-import com.rajputkapilesh.tmdbclient.data.MovieList
-import com.rajputkapilesh.tmdbclient.data.TvShowList
+import com.rajputkapilesh.tmdbclient.data.model.artist.ArtistList
+import com.rajputkapilesh.tmdbclient.data.model.movie.MovieList
+import com.rajputkapilesh.tmdbclient.data.model.tvshow.TvShowList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
