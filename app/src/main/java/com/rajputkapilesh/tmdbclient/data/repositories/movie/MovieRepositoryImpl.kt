@@ -30,12 +30,14 @@ class MovieRepositoryImpl(
 
     suspend fun getMoviesFromApi(): List<Movie> {
         lateinit var movieList: List<Movie>
-
         try {
             val response = movieRemoteDataSource.getMovies()
             val body = response.body()
+            Log.e(TAG, "getMoviesFromApi: ${body.toString()}", )
             if (body != null) {
                 movieList = body.movies
+            }else{
+                Log.e(TAG, "getMoviesFromApi: Empty response body", )
             }
         } catch (e: Exception) {
             Log.i(TAG, "getMoviesFromApi: ${e.message.toString()}")
@@ -43,6 +45,7 @@ class MovieRepositoryImpl(
 
         return movieList
     }
+
 
     suspend fun getMoviesFromDb(): List<Movie> {
         lateinit var movieList: List<Movie>
