@@ -3,6 +3,8 @@ package com.rajputkapilesh.tmdbclient.presentation
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import androidx.databinding.DataBindingUtil
 import com.rajputkapilesh.tmdbclient.R
 import com.rajputkapilesh.tmdbclient.databinding.ActivityHomeBinding

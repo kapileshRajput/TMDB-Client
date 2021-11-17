@@ -26,7 +26,7 @@ data class TvShow(
     @SerializedName("poster_path")
     val posterPath: String?,
     @SerializedName("vote_average")
-    val voteAverage: Int?,
+    val voteAverage: Double?,
     @SerializedName("vote_count")
     val voteCount: Int?
 )
